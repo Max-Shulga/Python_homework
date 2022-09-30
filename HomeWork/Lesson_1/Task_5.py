@@ -5,7 +5,7 @@
 #  - A (3,6); B (2,1) -> 5,09
 #  - A (7,-5); B (1,-1) -> 7,21
 
-import math
+from math import sqrt
 
 
 def dist_points(a1, b1, a2, b2):
@@ -15,7 +15,7 @@ def dist_points(a1, b1, a2, b2):
 
 
 def dist_points2(a1, b1, a2, b2):
-    d = math.sqrt(math.pow((a2 - a1), 2) + math.pow((b2-b1), 2))
+    d = sqrt(pow((a2 - a1), 2) + pow((b2-b1), 2))
     d = round(d, 2)
     return d
 
@@ -25,4 +25,4 @@ y1 = float(input('enter the Y coordinates of the first point: '))
 x2 = float(input('enter the X coordinates of the second point: '))
 y2 = float(input('enter the Y coordinates of the second point: '))
 print(f'A{x1,y1}; B{x2,y2} -> {dist_points(x1,y1,x2,y2)}')
-# print(f'A{x1,y1}; B{x2,y2} -> {dist_points2(x1,y1,x2,y2)}')
+print(f'A{x1,y1}; B{x2,y2} -> {dist_points2(x1,y1,x2,y2)}')
