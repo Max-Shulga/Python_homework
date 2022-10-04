@@ -1,12 +1,14 @@
 # Задайте число. Составьте список чисел Фибоначчи, в том числе для отрицательных индексов.
 # Пример:
 # - для k = 8 список будет выглядеть так: [-21 ,13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21]
+
+def  nega_fibonacci(numb):
+    array = [1, 0, 1]
+    for i in range(1, num):
+        array.insert(0, array[1] - array[0]) 
+        array.append(array[-2] + array[-1])
+    return array
+
 num = int(input('input number: '))
-x = [-1, 0, 1]
 
-for i in range(1, num):
-    x.insert(0, x[1] - x[0]) 
-    x.append(x[-2] + x[-1])
-
-
-print(x)
+print(nega_fibonacci(num))
