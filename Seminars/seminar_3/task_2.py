@@ -30,16 +30,16 @@
 # 1 2 7 8
 
 # 8 строк
-n=int(input())
-f=[]
-hacker =  ['a', 'n', 't', 'o', 'n','']
-count=0
-otvet=[]
+# n=int(input())
+# f=[]
+# hacker =  ['a', 'n', 't', 'o', 'n','']
+# count=0
+# otvet=[]
 
-text = '222anton456'
+# text = '222anton456'
 
-for i in hacker:
-    if text.find(hacker[i])
+# for i in hacker:
+#     if text.find(hacker[i])
 
 
 

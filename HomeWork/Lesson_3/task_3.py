@@ -3,7 +3,15 @@
 # Пример:
 
 # - [1.1, 1.2, 3.1, 5, 10.01] => 0.19
+list = [1.1, 1.2, 3.1, 10.01]
+mix_list = []
 
+for i in list:
+    mix_list.append(round(i-int(i), 2))
+
+print(list, end=' => ')
+print(max(mix_list) - min(mix_list))
+exit()
 
 def get_fractional_value(list):
     array = []

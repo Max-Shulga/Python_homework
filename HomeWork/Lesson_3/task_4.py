@@ -5,7 +5,23 @@
 # - 45 -> 101101
 # - 3 -> 11
 # - 2 -> 10
+# num = int(input("Введите число: "))
+# binum = ''
 
+# while num:
+#     binum = str(num%2) + binum
+#     num //= 2
+
+# print(binum)
+
+a = int(input('введите число для перевода = '))
+b = ''
+while a != 0:
+    b = str(a % 2) + b
+    a = a // 2
+print(b)
+
+exit()
 def to_binar(number, array: list = []):
     number = int(number)
     if number == 0:
