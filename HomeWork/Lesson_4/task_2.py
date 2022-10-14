@@ -10,6 +10,21 @@ for i in simple_numbers_list:
     while numb % i == 0:
         numb = numb/i
         result_list.append(i)
+print(simple_numbers_list)
 print(f'list of prime factors of number {numb} : {result_list}')
 
 # result_list = [i for i in simple_numbers_list if numb % i == 0] работает но работает не совсем верно
+
+# n = int(input("Введите число N: "))
+# i = 2 
+# list = []
+
+# while i <= n:
+#     if n % i == 0:
+#         list.append(i)
+#         n //= i
+#         i = 2
+#     else:
+#         i += 1
+# print(f"Простые множители введенного числа указаны в списке: {list}")
+
