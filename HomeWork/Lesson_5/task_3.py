@@ -33,7 +33,6 @@ def corrective_input():
         place = int(input('this square is already occupied, choose another: '))
         while place <= 0 or place > 9:
             place = int(input('invalid input, please try again: '))
-
     return place
 
 
