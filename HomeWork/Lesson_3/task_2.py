@@ -12,6 +12,15 @@ proiz_b = list(list_b[i]*list_b[-1*(1+i)] for i in range(b//2+1*(b%2)))
 print(proiz_b)
 
 exit()
+
+import math
+
+array = [2, 3, 4, 5, 6]
+prod = 1
+prod_array = list((int(array[i] * array[len(array)-i-1])) for i in range(math.ceil(len(array)/2)))
+print(prod_array)
+
+
 def elements_sum(array=[], result_array: list = []):
     if len(array) >= 2:
         result_array.append(array[0] * array[-1])
